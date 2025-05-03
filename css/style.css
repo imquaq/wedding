@@ -343,7 +343,7 @@ figure {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  background-image:url(../images/img_bg_2.jpg);
+  background-image: url(../images/img_bg_2.JPG);
 }
 
 .fh5co-cover .overlay {
@@ -363,7 +363,7 @@ figure {
 
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    background-image:url(../images/mobile/img_bg_2.jpg);
+    background-image: url(../images/mobile/img_bg_2.JPG);
     height: 600px;
   }
 }
@@ -408,10 +408,15 @@ figure {
   }
 }
 
-#fh5co-counter,
+#fh5co-counter {
+  height: 900px;
+  float: left;
+}
+
 #fh5co-event {
   height: 900px;
   float: left;
+  background-image: url(../images/img_bg_3.JPG);
 }
 
 #fh5co-counter .display-t,
@@ -454,10 +459,15 @@ figure {
 
 @media screen and (max-width: 768px) {
 
-  #fh5co-counter,
+  #fh5co-counter {
+    height: inherit;
+    padding: 7em 0;
+  }
+
   #fh5co-event {
     height: inherit;
     padding: 7em 0;
+    background-image: url(../images/mobile/img_bg_3.JPG);
   }
 
   #fh5co-counter .display-t,
