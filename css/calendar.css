@@ -6,3 +6,17 @@
 .tb-calendar td, th{
     padding: 16px !important;
 }
+
+.day-outof-month{
+    color: lightgray;
+}
+
+.day-of-month{
+    color: black;
+}
+
+.day-selected{
+    color: #F14E95;
+    font-weight: 900;
+    text-decoration: underline;
+}
