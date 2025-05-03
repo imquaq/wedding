@@ -991,7 +991,7 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -1377,11 +1377,11 @@ form label {
 
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   .fh5co-heading h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
