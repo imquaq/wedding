@@ -1,0 +1,8 @@
+.tb-calendar{
+    width: 100%;
+    text-align: center;
+}
+
+.tb-calendar td, th{
+    padding: 16px !important;
+}
