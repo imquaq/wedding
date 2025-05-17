@@ -214,7 +214,6 @@
 	};
 
 	var autoplay = function () {
-
 		const audio = document.getElementById('bg-audio');
 		const muteBtn = document.getElementById('muteBtn');
 
