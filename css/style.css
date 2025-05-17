@@ -1070,7 +1070,7 @@ form label {
   }
 
   #fh5co-end .display-tc h2 {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     font-size: 45px;
     line-height: 1.5;
     color: white;
@@ -1126,7 +1126,7 @@ form label {
 
   #fh5co-end .display-tc h2 {
     margin-bottom: 0;
-    font-size: 25px;
+    font-size: 35px;
     line-height: 1.5;
     color: white;
     font-family: "Sacramento", Arial, serif;
@@ -1888,7 +1888,7 @@ form label {
 
 .gototop {
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
   z-index: 999;
   opacity: 0;
@@ -1896,6 +1896,29 @@ form label {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+#muteBtn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #F14E95;
+  color: white;
+  cursor: pointer;
+}
+#muteBtn i {
+  display: table-cell;
+}
+
+#muteBtn:hover {
+  background-color: #555;
 }
 
 .gototop.active {

@@ -1,6 +1,7 @@
 .tb-calendar{
     width: 100%;
     text-align: center;
+    table-layout: fixed;
 }
 
 .tb-calendar td, th{
