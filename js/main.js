@@ -228,6 +228,13 @@
 			audio.load();      // Load the new audio
 			audio.play();      // Play the new audio
 		});
+		
+		setTimeout(() => {
+			console.log('play');
+			console.log(audio.muted);
+			audio.muted = false;
+		}, 5000);
+
 	}
 
 
