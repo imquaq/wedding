@@ -1917,10 +1917,6 @@ form label {
   display: table-cell;
 }
 
-#muteBtn:hover {
-  background-color: #555;
-}
-
 .gototop.active {
   opacity: 1;
   visibility: visible;

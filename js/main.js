@@ -214,29 +214,46 @@
 	};
 
 	var autoplay = function () {
-		const audio = document.getElementById('bg-audio');
-		const muteBtn = document.getElementById('muteBtn');
-
-		muteBtn.addEventListener('click', () => {
-			audio.muted = !audio.muted;
-			muteBtn.innerHTML = audio.muted ? `<i class="fa-duotone fa-solid fa-volume-xmark"></i>` : `<i class="fa-solid fa-volume-high"></i>`;
-		});
-
-		audio.addEventListener('ended', function () {
-			// Replace the audio source
-			audio.src = 'audios/beautiful-in-white.mp3';
-			audio.load();      // Load the new audio
-			audio.play();      // Play the new audio
-		});
-		
 		setTimeout(() => {
-			console.log('play');
-			console.log(audio.muted);
-			audio.muted = false;
-		}, 5000);
+			const muteBtn = document.getElementById('muteBtn');
 
+			document.getElementById('bgPage').innerHTML += `
+				<audio id="bg-audio" autoplay loop playsinline hidden muted>
+					<source src="audios/beautiful-in-white.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			`;
+			muteBtn.style.display = 'block';
+
+			const audio = document.getElementById('bg-audio');
+
+			muteBtn.addEventListener('click', () => {
+				audio.muted = !audio.muted;
+				muteBtn.innerHTML = audio.muted ? `<i class="fa-duotone fa-solid fa-volume-xmark"></i>` : `<i class="fa-solid fa-volume-high"></i>`;
+			});
+
+			// audio.addEventListener('ended', function () {
+			// 	// Replace the audio source
+			// 	audio.src = 'audios/beautiful-in-white.mp3';
+			// 	audio.load();      // Load the new audio
+			// 	audio.play();      // Play the new audio
+			// });
+
+			var itv = setTimeout(() => {
+				console.log('play');
+				console.log(audio.muted);
+				if (audio.muted) {
+					audio.muted = false;
+				}
+				if (audio.paused) {
+					audio.play();
+				}
+				if (!audio.paused) {
+					clearInterval(itv);
+				}
+			}, 1000);
+		}, 3000);
 	}
-
 
 	$(function () {
 		mobileMenuOutsideClick();
