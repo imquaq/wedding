@@ -230,6 +230,7 @@
 			if (audio.paused){
 				muteBtn.click();
 			}
+			muteBtn.style.display = 'block';
 		}, 3000);
 	}
 

@@ -1039,7 +1039,7 @@ form label {
 
   #fh5co-end .display-t,
   #fh5co-end .display-tc {
-    height: 550px;
+    height: 545px;
     display: table;
     width: 100%;
   }
@@ -1108,7 +1108,7 @@ form label {
 
   #fh5co-end .display-t,
   #fh5co-end .display-tc {
-    height: 450px;
+    height: 425px;
     display: table;
     width: 100%;
   }
@@ -1379,7 +1379,7 @@ form label {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
   .couple-half .groom,
   .couple-half .bride {
@@ -1418,7 +1418,7 @@ form label {
   float: left;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
   .couple-half .groom,
   .couple-half .bride {
