@@ -73,24 +73,31 @@
 </head>
 
 <body>
+	<div style="height: 100vh; width: 100%; background-color: pink; display: none;">
+		<div class="row" style="margin: 0;">
+			<div class="col-md-6" style="height: 100vh; background-color: red; margin: 0;"></div>
+			<div class="col-md-6" style="height: 100vh; background-color: yellow; margin: 0;"></div>
+		</div>
+	</div>
 
-	<audio id="bg-audio" loop hidden muted>
-		<source src="audios/beautiful-in-white.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-	</audio>
+	<div id="main-content" style="display: block;">
+		<audio id="bg-audio" loop hidden muted>
+			<source src="audios/beautiful-in-white.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 
-	<div id="bgPage"></div>
+		<div id="bgPage"></div>
 
-	<div class="fh5co-loader"></div>
+		<div class="fh5co-loader"></div>
 
-	<div id="page">
-		<nav class="fh5co-nav" role="navigation">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div id="fh5co-logo"><a href="index.html">Save the date</a></div>
-					</div>
-					<!-- <div class="col-md-8 text-right menu-1">
+		<div id="page">
+			<nav class="fh5co-nav" role="navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div id="fh5co-logo"><a href="index.html">Save the date</a></div>
+						</div>
+						<!-- <div class="col-md-8 text-right menu-1">
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="about.html">Story</a></li>
@@ -115,171 +122,176 @@
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div> -->
+					</div>
+
 				</div>
+			</nav>
 
-			</div>
-		</nav>
-
-		<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="display-t">
-							<div class="display-tc animate-box" data-animate-effect="fadeIn">
-								<h1>Phú Quang &amp; Thúy Vy</h1>
-								<!-- <h2>We Are Getting Married</h2> -->
-								<div class="simply-countdown simply-countdown-one col-md-12" style="margin-top: 20px;">
+			<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div class="display-t">
+								<div class="display-tc animate-box" data-animate-effect="fadeIn">
+									<h1>Phú Quang &amp; Thúy Vy</h1>
+									<!-- <h2>We Are Getting Married</h2> -->
+									<div class="simply-countdown simply-countdown-one col-md-12"
+										style="margin-top: 20px;">
+									</div>
+									<!-- <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p> -->
 								</div>
-								<!-- <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div id="fh5co-couple">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+							<h2><i class="fa-regular fa-envelope"></i> THƯ MỜI TIỆC CƯỚI <i
+									class="fa-regular fa-envelope"></i>
+							</h2>
+							<h3>
+								<strong><i class="fa-regular fa-clock"></i> Thứ sáu - 18:00</strong>
+							</h3>
+							<h3>
+								<strong><i class="icon-calendar"></i> Ngày 18 tháng 07 năm 2025</strong>
+							</h3>
+							<p><strong><em>Gia đình chúng tôi trân trọng mời bạn đến tham dự Tiệc cưới.</p>
+							</em></strong>
+						</div>
+					</div>
+					<div class="couple-wrap animate-box">
+						<div class="couple-half">
+							<div class="groom text-center">
+								<img src="images/groom.JPG" alt="groom" class="img-responsive"
+									style="margin-bottom: 10px;">
+								<h4>Út Nam</h3>
+							</div>
+							<div class="desc-groom">
+								<h3><strong>Nguyễn Phú Quang</strong></h3>
+								<table style="margin: 0 auto; text-align: left;">
+									<tbody>
+										<tr>
+											<td>
+												<h4 style="margin-right: 10px;">ÔNG:</h4>
+											</td>
+											<td>
+												<h4><strong>NGUYỄN VĂN PHÚC</strong></h4>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h4 style="margin-right: 10px;">BÀ:</h4>
+											</td>
+											<td>
+												<h4><strong>TRỊNH HỒNG PHỤNG</strong></h4>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- <h4>ÔNG: <strong>NGUYỄN VĂN PHÚC</strong></h4>
+								<h4>BÀ: <strong>TRỊNH HỒNG PHÓNG</strong></span> -->
+							</div>
+						</div>
+						<p class="heart text-center"><i class="icon-heart2"></i></p>
+						<div class="couple-half">
+							<div class="bride text-center">
+								<img src="images/bride.JPG" alt="groom" class="img-responsive"
+									style="margin-bottom: 10px;">
+								<h4>Trưởng Nữ</h4>
+							</div>
+							<div class="desc-bride">
+								<h3><strong>Nguyễn Ngọc Thúy Vy</strong></h3>
+								<table style="margin: 0 auto; text-align: left;">
+									<tbody>
+										<tr>
+											<td>
+												<h4 style="margin-right: 10px;">ÔNG:</h4>
+											</td>
+											<td>
+												<h4><strong>NGUYỄN MINH HẢI</strong></h4>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h4 style="margin-right: 10px;">BÀ:</h4>
+											</td>
+											<td>
+												<h4><strong>TRẦN THỊ DUNG</strong></h4>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- <h4>ÔNG: <strong>NGUYỄN MINH HẢI</strong></h4>
+								<h4>BÀ: <strong>TRẦN THỊ DUNG</strong></span> -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
 
-		<div id="fh5co-couple">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<h2><i class="fa-regular fa-envelope"></i> THƯ MỜI TIỆC CƯỚI <i
-								class="fa-regular fa-envelope"></i>
-						</h2>
-						<h3>
-							<strong><i class="fa-regular fa-clock"></i> Thứ sáu - 18:00</strong>
-						</h3>
-						<h3>
-							<strong><i class="icon-calendar"></i> Ngày 18 tháng 07 năm 2025</strong>
-						</h3>
-						<p><strong><em>Gia đình chúng tôi trân trọng mời bạn đến tham dự Tiệc cưới.</p></em></strong>
-					</div>
-				</div>
-				<div class="couple-wrap animate-box">
-					<div class="couple-half">
-						<div class="groom text-center">
-							<img src="images/groom.JPG" alt="groom" class="img-responsive" style="margin-bottom: 10px;">
-							<h4>Út Nam</h3>
-						</div>
-						<div class="desc-groom">
-							<h3><strong>Nguyễn Phú Quang</strong></h3>
-							<table style="margin: 0 auto; text-align: left;">
-								<tbody>
-									<tr>
-										<td>
-											<h4 style="margin-right: 10px;">ÔNG:</h4>
-										</td>
-										<td>
-											<h4><strong>NGUYỄN VĂN PHÚC</strong></h4>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<h4 style="margin-right: 10px;">BÀ:</h4>
-										</td>
-										<td>
-											<h4><strong>TRỊNH HỒNG PHỤNG</strong></h4>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<!-- <h4>ÔNG: <strong>NGUYỄN VĂN PHÚC</strong></h4>
-								<h4>BÀ: <strong>TRỊNH HỒNG PHÓNG</strong></span> -->
+			<div id="fh5co-event" class="fh5co-bg">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
+							style="margin-bottom: 2em !important;">
+							<!-- <h2>THƯ MỜI</h2> -->
+							<h3>THAM DỰ TIỆC CƯỚI CỦA QUANG & VY</h3>
 						</div>
 					</div>
-					<p class="heart text-center"><i class="icon-heart2"></i></p>
-					<div class="couple-half">
-						<div class="bride text-center">
-							<img src="images/bride.JPG" alt="groom" class="img-responsive" style="margin-bottom: 10px;">
-							<h4>Trưởng Nữ</h4>
-						</div>
-						<div class="desc-bride">
-							<h3><strong>Nguyễn Ngọc Thúy Vy</strong></h3>
-							<table style="margin: 0 auto; text-align: left;">
-								<tbody>
-									<tr>
-										<td>
-											<h4 style="margin-right: 10px;">ÔNG:</h4>
-										</td>
-										<td>
-											<h4><strong>NGUYỄN MINH HẢI</strong></h4>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<h4 style="margin-right: 10px;">BÀ:</h4>
-										</td>
-										<td>
-											<h4><strong>TRẦN THỊ DUNG</strong></h4>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<!-- <h4>ÔNG: <strong>NGUYỄN MINH HẢI</strong></h4>
-								<h4>BÀ: <strong>TRẦN THỊ DUNG</strong></span> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="fh5co-event" class="fh5co-bg">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
-						style="margin-bottom: 2em !important;">
-						<!-- <h2>THƯ MỜI</h2> -->
-						<h3>THAM DỰ TIỆC CƯỚI CỦA QUANG & VY</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1">
-								<div class="col-md-12 form-group text-center">
-									<div class="event-wrap animate-box">
-										<h3><strong>TIỆC CƯỚI NHÀ GÁI</strong></h3>
-										<!-- <div class="event-col">
+					<div class="row">
+						<div class="display-t">
+							<div class="display-tc">
+								<div class="col-md-10 col-md-offset-1">
+									<div class="col-md-12 form-group text-center">
+										<div class="event-wrap animate-box">
+											<h3><strong>TIỆC CƯỚI NHÀ GÁI</strong></h3>
+											<!-- <div class="event-col">
 												<i class="icon-clock"></i>
 												<span>10:00</span>
 											</div> -->
-										<div class="event-col" style="width: 100%;">
-											<i class="icon-calendar"></i>
-											<span>17/07/2025</span>
-										</div>
-										<span>
-											Tiệc cưới được tổ chức tại
-											<br>
-											<span style="color: white;"><i class="fa-solid fa-house"></i> Tư gia nhà
-												gái</span>
-										</span>
-									</div>
-								</div>
-								<div class="col-md-12 form-group text-center">
-									<div class="event-wrap animate-box">
-										<h3><strong>TIỆC CƯỚI NHÀ TRAI</strong></h3>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>18:00</span>
-										</div>
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>18/07/2025</span>
-										</div>
-										<span>
-											Tiệc cưới được tổ chức tại
-											<br>
-											<span style="color: white;">
-												<i class="fa-solid fa-bell-concierge"></i> Sảnh TOKYO - Lầu 2
+											<div class="event-col" style="width: 100%;">
+												<i class="icon-calendar"></i>
+												<span>17/07/2025</span>
+											</div>
+											<span>
+												Tiệc cưới được tổ chức tại
 												<br>
-												<i class="fa-solid fa-building-columns"></i>
-												Trung tâm Hội nghị & Tiệc cưới <strong>Metropole</strong>
-												<br>
-												<i class="fa-solid fa-location-dot"></i>
-												216 Lý Chính Thắng, Phường 9, Quận 3, TP.HCM
+												<span style="color: white;"><i class="fa-solid fa-house"></i> Tư gia nhà
+													gái</span>
 											</span>
-										</span>
+										</div>
+									</div>
+									<div class="col-md-12 form-group text-center">
+										<div class="event-wrap animate-box">
+											<h3><strong>TIỆC CƯỚI NHÀ TRAI</strong></h3>
+											<div class="event-col">
+												<i class="icon-clock"></i>
+												<span>18:00</span>
+											</div>
+											<div class="event-col">
+												<i class="icon-calendar"></i>
+												<span>18/07/2025</span>
+											</div>
+											<span>
+												Tiệc cưới được tổ chức tại
+												<br>
+												<span style="color: white;">
+													<i class="fa-solid fa-bell-concierge"></i> Sảnh TOKYO - Lầu 2
+													<br>
+													<i class="fa-solid fa-building-columns"></i>
+													Trung tâm Hội nghị & Tiệc cưới <strong>Metropole</strong>
+													<br>
+													<i class="fa-solid fa-location-dot"></i>
+													216 Lý Chính Thắng, Phường 9, Quận 3, TP.HCM
+												</span>
+											</span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -287,220 +299,220 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div id="fh5co-event-info">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-6 form-group animate-box">
-						<div class="row">
-							<div class="col-md-12">
-								<h1 style="color: #F14E95;">
-									<strong><i class="fa-solid fa-calendar-days"></i> Thời gian</strong>
-								</h1>
-							</div>
-							<div class="col-md-12 form-group">
-								<strong>
-									<i class="fa-regular fa-clock"></i> Thứ sáu - 18:00
-									<br>
-									<i class="fa-solid fa-calendar-plus"></i> Ngày 18 tháng 07 năm 2025
-								</strong>
-								<br>
-								<em><i class="fa-solid fa-calendar-minus"></i> (Nhằm ngày 24 tháng 06 năm Ất Tỵ)</em>
-							</div>
-						</div>
-						<div
-							style="border-radius: 20px; box-shadow: 3px 3px 3px 3px; padding: 10px; margin-bottom: 40px;">
-							<div class="row" style="font-family: Arial, Helvetica, sans-serif;">
+			<div id="fh5co-event-info">
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-md-6 form-group animate-box">
+							<div class="row">
 								<div class="col-md-12">
-									<h3
-										style="color: #F14E95; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
-										Tháng 7/2025</h3>
+									<h1 style="color: #F14E95;">
+										<strong><i class="fa-solid fa-calendar-days"></i> Thời gian</strong>
+									</h1>
 								</div>
-								<div class="col-md-12">
-									<table class="tb-calendar">
-										<thead>
-											<tr>
-												<th class="text-center">T2</th>
-												<th class="text-center">T3</th>
-												<th class="text-center">T4</th>
-												<th class="text-center">T5</th>
-												<th class="text-center">T6</th>
-												<th class="text-center">T7</th>
-												<th class="text-center">CN</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td class="day-outof-month">30</td>
-												<td class="day-of-month">1</td>
-												<td class="day-of-month">2</td>
-												<td class="day-of-month">3</td>
-												<td class="day-of-month">4</td>
-												<td class="day-of-month">5</td>
-												<td class="day-of-month">6</td>
-											</tr>
-											<tr>
-												<td class="day-of-month">7</td>
-												<td class="day-of-month">8</td>
-												<td class="day-of-month">9</td>
-												<td class="day-of-month">10</td>
-												<td class="day-of-month">11</td>
-												<td class="day-of-month">12</td>
-												<td class="day-of-month">13</td>
-											</tr>
-											<tr>
-												<td class="day-of-month">14</td>
-												<td class="day-of-month">15</td>
-												<td class="day-of-month">16</td>
-												<td class="day-of-month">17</td>
-												<td class="day-selected">18</td>
-												<td class="day-of-month">19</td>
-												<td class="day-of-month">20</td>
-											</tr>
-											<tr>
-												<td class="day-of-month">21</td>
-												<td class="day-of-month">22</td>
-												<td class="day-of-month">23</td>
-												<td class="day-of-month">24</td>
-												<td class="day-of-month">25</td>
-												<td class="day-of-month">26</td>
-												<td class="day-of-month">27</td>
-											</tr>
-											<tr>
-												<td class="day-of-month">28</td>
-												<td class="day-of-month">29</td>
-												<td class="day-of-month">30</td>
-												<td class="day-of-month">31</td>
-												<td class="day-outof-month">1</td>
-												<td class="day-outof-month">2</td>
-												<td class="day-outof-month">3</td>
-											</tr>
-										</tbody>
-									</table>
+								<div class="col-md-12 form-group">
+									<strong>
+										<i class="fa-regular fa-clock"></i> Thứ sáu - 18:00
+										<br>
+										<i class="fa-solid fa-calendar-plus"></i> Ngày 18 tháng 07 năm 2025
+									</strong>
+									<br>
+									<em><i class="fa-solid fa-calendar-minus"></i> (Nhằm ngày 24 tháng 06 năm Ất
+										Tỵ)</em>
 								</div>
 							</div>
+							<div
+								style="border-radius: 20px; box-shadow: 3px 3px 3px 3px; padding: 10px; margin-bottom: 40px;">
+								<div class="row" style="font-family: Arial, Helvetica, sans-serif;">
+									<div class="col-md-12">
+										<h3
+											style="color: #F14E95; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+											Tháng 7/2025</h3>
+									</div>
+									<div class="col-md-12">
+										<table class="tb-calendar">
+											<thead>
+												<tr>
+													<th class="text-center">T2</th>
+													<th class="text-center">T3</th>
+													<th class="text-center">T4</th>
+													<th class="text-center">T5</th>
+													<th class="text-center">T6</th>
+													<th class="text-center">T7</th>
+													<th class="text-center">CN</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="day-outof-month">30</td>
+													<td class="day-of-month">1</td>
+													<td class="day-of-month">2</td>
+													<td class="day-of-month">3</td>
+													<td class="day-of-month">4</td>
+													<td class="day-of-month">5</td>
+													<td class="day-of-month">6</td>
+												</tr>
+												<tr>
+													<td class="day-of-month">7</td>
+													<td class="day-of-month">8</td>
+													<td class="day-of-month">9</td>
+													<td class="day-of-month">10</td>
+													<td class="day-of-month">11</td>
+													<td class="day-of-month">12</td>
+													<td class="day-of-month">13</td>
+												</tr>
+												<tr>
+													<td class="day-of-month">14</td>
+													<td class="day-of-month">15</td>
+													<td class="day-of-month">16</td>
+													<td class="day-of-month">17</td>
+													<td class="day-selected">18</td>
+													<td class="day-of-month">19</td>
+													<td class="day-of-month">20</td>
+												</tr>
+												<tr>
+													<td class="day-of-month">21</td>
+													<td class="day-of-month">22</td>
+													<td class="day-of-month">23</td>
+													<td class="day-of-month">24</td>
+													<td class="day-of-month">25</td>
+													<td class="day-of-month">26</td>
+													<td class="day-of-month">27</td>
+												</tr>
+												<tr>
+													<td class="day-of-month">28</td>
+													<td class="day-of-month">29</td>
+													<td class="day-of-month">30</td>
+													<td class="day-of-month">31</td>
+													<td class="day-outof-month">1</td>
+													<td class="day-outof-month">2</td>
+													<td class="day-outof-month">3</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 form-group animate-box">
+							<div class="row">
+								<div class="col-md-12">
+									<h1 style="color: #F14E95;">
+										<strong><i class="fa-solid fa-map-location-dot"></i> Địa điểm</strong>
+									</h1>
+								</div>
+								<div class="col-md-12 form-group">
+									<strong>
+										<i class="fa-solid fa-bell-concierge"></i> Sảnh TOKYO - Lầu 2
+										<br>
+										<i class="fa-solid fa-building-columns"></i> Trung tâm Hội nghị & Tiệc cưới
+										Metropole
+										<br>
+										<i class="fa-solid fa-location-dot"></i> 216 Lý Chính Thắng, Phường 9, Quận 3,
+										TP.HCM
+									</strong>
+								</div>
+								<div class="col-md-12 form-group">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4088840731374!2d106.67965707373577!3d10.77996265913116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f2f53a8f12b%3A0x2166a074ded68eee!2zVHJ1bmcgdMOibSBI4buZaSBuZ2jhu4sgJiBUaeG7h2MgY8aw4bubaSBNZXRyb3BvbGU!5e0!3m2!1svi!2s!4v1745072569113!5m2!1svi!2s"
+										width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade">
+									</iframe>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 form-group">
+							<a href="https://maps.app.goo.gl/qCDcv1Fd5NLQySdf8" target="_blank">
+								<button class="btn btn-primary">
+									Xem bản đồ
+								</button>
+							</a>
 						</div>
 					</div>
-					<div class="col-md-6 form-group animate-box">
-						<div class="row">
-							<div class="col-md-12">
-								<h1 style="color: #F14E95;">
-									<strong><i class="fa-solid fa-map-location-dot"></i> Địa điểm</strong>
-								</h1>
-							</div>
-							<div class="col-md-12 form-group">
-								<strong>
-									<i class="fa-solid fa-bell-concierge"></i> Sảnh TOKYO - Lầu 2
-									<br>
-									<i class="fa-solid fa-building-columns"></i> Trung tâm Hội nghị & Tiệc cưới
-									Metropole
-									<br>
-									<i class="fa-solid fa-location-dot"></i> 216 Lý Chính Thắng, Phường 9, Quận 3,
-									TP.HCM
-								</strong>
-							</div>
-							<div class="col-md-12 form-group">
-								<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4088840731374!2d106.67965707373577!3d10.77996265913116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f2f53a8f12b%3A0x2166a074ded68eee!2zVHJ1bmcgdMOibSBI4buZaSBuZ2jhu4sgJiBUaeG7h2MgY8aw4bubaSBNZXRyb3BvbGU!5e0!3m2!1svi!2s!4v1745072569113!5m2!1svi!2s"
-									width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-									referrerpolicy="no-referrer-when-downgrade">
-								</iframe>
-							</div>
+					<hr style="border: dashed; color: #828282;">
+					<div class="row text-center">
+						<div class="col-md-12 form-group">
+							<h1 style="color: #F14E95; margin-bottom: 5px;">
+								<strong><i class="fa-solid fa-square-parking"></i> Gửi xe</strong>
+							</h1>
+							<strong style="font-style: italic;">
+								<i class="fa-solid fa-wine-glass" style="color: #F14E95; font-size: 20px;"></i>
+								Đã uống rượu bia - thì không lái xe
+								<i class="fa-solid fa-wine-glass" style="color: #F14E95; font-size: 20px;"></i>
+							</strong>
 						</div>
-					</div>
-					<div class="col-md-12 form-group">
-						<a href="https://maps.app.goo.gl/qCDcv1Fd5NLQySdf8" target="_blank">
-							<button class="btn btn-primary">
-								Xem bản đồ
-							</button>
-						</a>
-					</div>
-				</div>
-				<hr style="border: dashed; color: #828282;">
-				<div class="row text-center">
-					<div class="col-md-12 form-group">
-						<h1 style="color: #F14E95; margin-bottom: 5px;">
-							<strong><i class="fa-solid fa-square-parking"></i> Gửi xe</strong>
-						</h1>
-						<strong style="font-style: italic;">
-							<i class="fa-solid fa-wine-glass" style="color: #F14E95; font-size: 20px;"></i>
-							Đã uống rượu bia - thì không lái xe
-							<i class="fa-solid fa-wine-glass" style="color: #F14E95; font-size: 20px;"></i>
-						</strong>
-					</div>
-					<div class="col-md-6 form-group animate-box text-center">
-						<div class="row">
-							<div class="col-md-12">
-								<h1 style="color: #F14E95; margin-bottom: 5px;">
-									<strong><i class="fa-solid fa-motorcycle"></i></strong>
-								</h1>
-							</div>
-							<div class="col-md-12 form-group">
-								<strong>
-									<i class="fa-solid fa-building-columns"></i>
-									<span style="font-style: italic; text-decoration: underline;">
-										Trung tâm Hội nghị & Tiệc cưới Metropole
-									</span>
-									<br>
-									<i class="fa-solid fa-location-dot"></i>
+						<div class="col-md-6 form-group animate-box text-center">
+							<div class="row">
+								<div class="col-md-12">
+									<h1 style="color: #F14E95; margin-bottom: 5px;">
+										<strong><i class="fa-solid fa-motorcycle"></i></strong>
+									</h1>
+								</div>
+								<div class="col-md-12 form-group">
+									<strong>
+										<i class="fa-solid fa-building-columns"></i>
+										<span style="font-style: italic; text-decoration: underline;">
+											Trung tâm Hội nghị & Tiệc cưới Metropole
+										</span>
+										<br>
+										<i class="fa-solid fa-location-dot"></i>
 										216 Lý Chính Thắng, Phường 9, Quận 3, TP.HCM
-								</strong>
-							</div>
-							<div class="col-md-12 form-group">
-								<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4088840731374!2d106.67965707373577!3d10.77996265913116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f2f53a8f12b%3A0x2166a074ded68eee!2zVHJ1bmcgdMOibSBI4buZaSBuZ2jhu4sgJiBUaeG7h2MgY8aw4bubaSBNZXRyb3BvbGU!5e0!3m2!1svi!2s!4v1745072569113!5m2!1svi!2s"
-									width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-									referrerpolicy="no-referrer-when-downgrade">
-								</iframe>
-							</div>
-							<div class="col-md-12 form-group">
-								<a href="https://maps.app.goo.gl/qCDcv1Fd5NLQySdf8" target="_blank">
-									<button class="btn btn-primary">
-										Xem chỗ gửi xe máy
-									</button>
-								</a>
+									</strong>
+								</div>
+								<div class="col-md-12 form-group">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4088840731374!2d106.67965707373577!3d10.77996265913116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f2f53a8f12b%3A0x2166a074ded68eee!2zVHJ1bmcgdMOibSBI4buZaSBuZ2jhu4sgJiBUaeG7h2MgY8aw4bubaSBNZXRyb3BvbGU!5e0!3m2!1svi!2s!4v1745072569113!5m2!1svi!2s"
+										width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade">
+									</iframe>
+								</div>
+								<div class="col-md-12 form-group">
+									<a href="https://maps.app.goo.gl/qCDcv1Fd5NLQySdf8" target="_blank">
+										<button class="btn btn-primary">
+											Xem chỗ gửi xe máy
+										</button>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-6 form-group animate-box text-center">
-						<div class="row">
-							<div class="col-md-12">
-								<h1 style="color: #F14E95; margin-bottom: 5px;">
-									<strong><i class="fa-solid fa-car"></i></strong>
-								</h1>
-							</div>
-							<div class="col-md-12 form-group">
-								<strong>
-									<i class="fa-solid fa-building-columns"></i>
-									<span style="font-style: italic; text-decoration: underline;">
-										Mega GS Cinemas Lý Chính Thắng
-									</span>
-									<br>
-									<i class="fa-solid fa-location-dot"></i>
+						<div class="col-md-6 form-group animate-box text-center">
+							<div class="row">
+								<div class="col-md-12">
+									<h1 style="color: #F14E95; margin-bottom: 5px;">
+										<strong><i class="fa-solid fa-car"></i></strong>
+									</h1>
+								</div>
+								<div class="col-md-12 form-group">
+									<strong>
+										<i class="fa-solid fa-building-columns"></i>
+										<span style="font-style: italic; text-decoration: underline;">
+											Mega GS Cinemas Lý Chính Thắng
+										</span>
+										<br>
+										<i class="fa-solid fa-location-dot"></i>
 										212 Lý Chính Thắng, Phường 9, Quận 3, TP.HCM
-								</strong>
-							</div>
-							<div class="col-md-12 form-group">
-								<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.400074823432!2d106.6824183!3d10.780639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f8a1bb2e59f%3A0x46d2bcd3e7bff8a!2zTWVnYSBHUyBDaW5lbWFzIEzDvSBDaMOtbmggVGjhuq9uZw!5e0!3m2!1svi!2s!4v1747455067200!5m2!1svi!2s"
-									width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-									referrerpolicy="no-referrer-when-downgrade"></iframe>
-							</div>
-							<div class="col-md-12 form-group">
-								<a href="https://maps.app.goo.gl/5fENvACvtAMPN12v9" target="_blank">
-									<button class="btn btn-primary">
-										Xem chỗ gửi ô tô
-									</button>
-								</a>
+									</strong>
+								</div>
+								<div class="col-md-12 form-group">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.400074823432!2d106.6824183!3d10.780639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f8a1bb2e59f%3A0x46d2bcd3e7bff8a!2zTWVnYSBHUyBDaW5lbWFzIEzDvSBDaMOtbmggVGjhuq9uZw!5e0!3m2!1svi!2s!4v1747455067200!5m2!1svi!2s"
+										width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+								<div class="col-md-12 form-group">
+									<a href="https://maps.app.goo.gl/5fENvACvtAMPN12v9" target="_blank">
+										<button class="btn btn-primary">
+											Xem chỗ gửi ô tô
+										</button>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- <div id="fh5co-couple-story">
+			<!-- <div id="fh5co-couple-story">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -564,165 +576,165 @@
 				</div>
 			</div> -->
 
-		<div id="fh5co-gallery" class="fh5co-section-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<!-- <span>Our Memories</span> -->
-						<h2 style="font-family: Sacramento, Arial, serif;"><i class="fa-solid fa-camera"></i> Gallery <i
-								class="fa-solid fa-camera"></i></h2>
-						<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+			<div id="fh5co-gallery" class="fh5co-section-gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+							<!-- <span>Our Memories</span> -->
+							<h2 style="font-family: Sacramento, Arial, serif;"><i class="fa-solid fa-camera"></i>
+								Gallery <i class="fa-solid fa-camera"></i></h2>
+							<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 								there live the blind texts.</p> -->
+						</div>
 					</div>
-				</div>
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-12">
-						<ul id="fh5co-gallery-list">
+					<div class="row row-bottom-padded-md">
+						<div class="col-md-12">
+							<ul id="fh5co-gallery-list">
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-1.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-1.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-3.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-3.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-4.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-4.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-6.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-6.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-7.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-7.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-8.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-8.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-11.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-11.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-13.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-13.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-15.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-15.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-16.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-16.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-18.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-18.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-19.JPG); ">
-								<!-- <a href="images/gallery-1.JPG">
+								<li class="one-third animate-box" data-animate-effect="fadeIn"
+									style="background-image: url(images/gallery-19.JPG); ">
+									<!-- <a href="images/gallery-1.JPG">
 										<div class="case-studies-summary">
 											<span>14 Photos</span>
 											<h2>Two Glas of Juice</h2>
 										</div>
 									</a> -->
-							</li>
+								</li>
 
-						</ul>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div id="fh5co-end">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="display-t">
-							<div class="display-tc animate-box" data-animate-effect="fadeIn">
-								<h1> Thank you <i class="fa fa-heart"></i></h1>
-								<h3>Sự hiện diện của quý vị là niềm vinh hạnh cho gia đình chúng tôi</h3>
-								<h2><strong>Phú Quang &amp; Thúy Vy</strong></h2>
+			<div id="fh5co-end">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div class="display-t">
+								<div class="display-tc animate-box" data-animate-effect="fadeIn">
+									<h1> Thank you <i class="fa fa-heart"></i></h1>
+									<h3>Sự hiện diện của quý vị là niềm vinh hạnh cho gia đình chúng tôi</h3>
+									<h2><strong>Phú Quang &amp; Thúy Vy</strong></h2>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.JPG);">
+			<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.JPG);">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row">
@@ -779,7 +791,7 @@
 				</div>
 			</div> -->
 
-		<!-- <div id="fh5co-testimonial">
+			<!-- <div id="fh5co-testimonial">
 				<div class="container">
 					<div class="row">
 						<div class="row animate-box">
@@ -839,7 +851,7 @@
 				</div>
 			</div> -->
 
-		<!-- <div id="fh5co-services" class="fh5co-section-gray">
+			<!-- <div id="fh5co-services" class="fh5co-section-gray">
 				<div class="container">
 
 					<div class="row animate-box">
@@ -901,7 +913,7 @@
 			</div> -->
 
 
-		<!-- <div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.JPG);">
+			<!-- <div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.JPG);">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row animate-box">
@@ -934,7 +946,7 @@
 				</div>
 			</div> -->
 
-		<!-- <footer id="fh5co-footer" role="contentinfo">
+			<!-- <footer id="fh5co-footer" role="contentinfo">
 				<div class="container">
 
 					<div class="row copyright">
@@ -958,15 +970,16 @@
 
 				</div>
 			</footer> -->
-	</div>
+		</div>
 
-	<button id="muteBtn" style="display: none;">
-		<i class="fa-duotone fa-solid fa-volume-xmark"></i>
-	</button>
+		<button id="muteBtn" style="display: none;">
+			<i class="fa-duotone fa-solid fa-volume-xmark"></i>
+		</button>
 
-	<div class="gototop js-top">
+		<div class="gototop js-top">
 
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		</div>
 	</div>
 
 	<!-- jQuery -->
