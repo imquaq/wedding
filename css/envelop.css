@@ -304,6 +304,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 #box-envelope {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: grid;
