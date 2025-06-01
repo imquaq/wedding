@@ -841,7 +841,7 @@ figure {
     right: 1em;
   }
 
-  #fh5co-gallery h2{
+  #fh5co-gallery h2 {
     font-size: 40px;
   }
 }
@@ -1917,6 +1917,7 @@ form label {
   color: white;
   cursor: pointer;
 }
+
 #muteBtn i {
   display: table-cell;
 }

@@ -299,16 +299,18 @@
 	var envelop = function () {
 
 		var ANIMATION_TIME = 2000;
+		var mainEnvenlop = $("#main-envelope");
 		var envelope = $("#box-envelope");
 		var heart = $("#heart-envelop");
 		var card = $('#main-content');
 
-		heart.click(function () {
+		envelope.click(function () {
+		// heart.click(function () {
 			if (!envelope.hasClass('flip')) {
 				envelope.addClass('flip');
-				envelope.fadeOut(ANIMATION_TIME);
+				mainEnvenlop.fadeOut(ANIMATION_TIME);
 				window.setTimeout(function () {
-					envelope.css('display', 'none');
+					mainEnvenlop.css('display', 'none');
 					card.css('display', 'block');
 					autoplay();
 				}, ANIMATION_TIME);

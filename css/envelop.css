@@ -26,6 +26,23 @@
     z-index: 1000;
 }
 
+
+#envelope-up {
+    position: absolute;
+    bottom: 1.39em;
+    left: -2em;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.4em 2em 1.4em 2em;
+    border-color: transparent transparent #f0f0f0 transparent;
+}
+
+#envelope:hover>#envelope-up {
+    border-color: transparent transparent #f0f0f0 transparent;
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
 #card {
@@ -303,14 +320,17 @@ textarea:focus:-ms-input-placeholder {
     }
 }
 
-#box-envelope {
-    position: relative;
+#main-envelope {
     width: 100vw;
     height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
     background: mistyrose;
+}
+
+#box-envelope {
+    position: relative;
 }
 
 /* wings */
