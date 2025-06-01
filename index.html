@@ -70,17 +70,51 @@
 		<![endif]-->
 
 	<link rel="stylesheet" href="css/calendar.css">
+	<link rel="stylesheet" href="css/box.css">
+	<link rel="stylesheet" href="css/envelop.css">
 </head>
 
 <body>
-	<div style="height: 100vh; width: 100%; background-color: pink; display: none;">
-		<div class="row" style="margin: 0;">
-			<div class="col-md-6" style="height: 100vh; background-color: red; margin: 0;"></div>
-			<div class="col-md-6" style="height: 100vh; background-color: yellow; margin: 0;"></div>
+	<div id="box-envelope">
+		<div class="wing right"></div>
+		<div class="wing left"></div>
+		<div id="envelope">
+			<i class="fa fa-heart" id="heart-envelop"></i>
+
+			<div class="top"></div>
+
+			<div class="sides"></div>
 		</div>
 	</div>
+	<!-- <div id="box" class="box-container">
+		<div class="box">
+			<div class="box-img">
+				<div class="box-inner-img">
+					<div class="box-img-1">
+						<img src="images/bg/box_img1.JPG">
+					</div>
+					<div class="box-inner-img1">
+						<img src="images/bg/box_inner_img1.JPG">
+					</div>
+					<div class="box-inner-img2">
+						<img src="images/bg/box_inner_img2.JPG">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box-calendar">
+				<div class="box-name">
+					<h2>Phú Quang & Thúy Vy</h2>
+				</div>
+				<div id="envelope" class="pulse">
+					<div id="envelope-up"></div>
+				</div>
+			</div>
+		</div>
+	</div> -->
 
-	<div id="main-content" style="display: block;">
+	<div id="main-content" style="display: none;">
 		<audio id="bg-audio" loop hidden muted>
 			<source src="audios/beautiful-in-white.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
@@ -95,7 +129,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
-							<div id="fh5co-logo"><a href="index.html">Save the date</a></div>
+							<div id="fh5co-logo"><span>Save the date</span></div>
 						</div>
 						<!-- <div class="col-md-8 text-right menu-1">
 						<ul>
@@ -262,7 +296,8 @@
 											<span>
 												Tiệc cưới được tổ chức tại
 												<br>
-												<span style="color: white;"><i class="fa-solid fa-house"></i> Tư gia nhà
+												<span style="color: white;"><i class="fa-solid fa-house"></i> Tư gia
+													nhà
 													gái</span>
 											</span>
 										</div>
@@ -321,78 +356,7 @@
 										Tỵ)</em>
 								</div>
 							</div>
-							<div
-								style="border-radius: 20px; box-shadow: 3px 3px 3px 3px; padding: 10px; margin-bottom: 40px;">
-								<div class="row" style="font-family: Arial, Helvetica, sans-serif;">
-									<div class="col-md-12">
-										<h3
-											style="color: #F14E95; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
-											Tháng 7/2025</h3>
-									</div>
-									<div class="col-md-12">
-										<table class="tb-calendar">
-											<thead>
-												<tr>
-													<th class="text-center">T2</th>
-													<th class="text-center">T3</th>
-													<th class="text-center">T4</th>
-													<th class="text-center">T5</th>
-													<th class="text-center">T6</th>
-													<th class="text-center">T7</th>
-													<th class="text-center">CN</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="day-outof-month">30</td>
-													<td class="day-of-month">1</td>
-													<td class="day-of-month">2</td>
-													<td class="day-of-month">3</td>
-													<td class="day-of-month">4</td>
-													<td class="day-of-month">5</td>
-													<td class="day-of-month">6</td>
-												</tr>
-												<tr>
-													<td class="day-of-month">7</td>
-													<td class="day-of-month">8</td>
-													<td class="day-of-month">9</td>
-													<td class="day-of-month">10</td>
-													<td class="day-of-month">11</td>
-													<td class="day-of-month">12</td>
-													<td class="day-of-month">13</td>
-												</tr>
-												<tr>
-													<td class="day-of-month">14</td>
-													<td class="day-of-month">15</td>
-													<td class="day-of-month">16</td>
-													<td class="day-of-month">17</td>
-													<td class="day-selected">18</td>
-													<td class="day-of-month">19</td>
-													<td class="day-of-month">20</td>
-												</tr>
-												<tr>
-													<td class="day-of-month">21</td>
-													<td class="day-of-month">22</td>
-													<td class="day-of-month">23</td>
-													<td class="day-of-month">24</td>
-													<td class="day-of-month">25</td>
-													<td class="day-of-month">26</td>
-													<td class="day-of-month">27</td>
-												</tr>
-												<tr>
-													<td class="day-of-month">28</td>
-													<td class="day-of-month">29</td>
-													<td class="day-of-month">30</td>
-													<td class="day-of-month">31</td>
-													<td class="day-outof-month">1</td>
-													<td class="day-outof-month">2</td>
-													<td class="day-outof-month">3</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
+							<div class="calendar"></div>
 						</div>
 						<div class="col-md-6 form-group animate-box">
 							<div class="row">
@@ -408,7 +372,8 @@
 										<i class="fa-solid fa-building-columns"></i> Trung tâm Hội nghị & Tiệc cưới
 										Metropole
 										<br>
-										<i class="fa-solid fa-location-dot"></i> 216 Lý Chính Thắng, Phường 9, Quận 3,
+										<i class="fa-solid fa-location-dot"></i> 216 Lý Chính Thắng, Phường 9, Quận
+										3,
 										TP.HCM
 									</strong>
 								</div>

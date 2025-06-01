@@ -1,0 +1,74 @@
+.box-container {
+    height: 100vh;
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    position: relative;
+}
+
+.box {
+    flex: 1;
+}
+
+.box-calendar {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box-img {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-inner-img {
+    position: relative;
+}
+
+.box-inner-img1,
+.box-inner-img2 {
+    position: absolute;
+}
+
+.box-inner-img1 {
+    top: 10px;
+    left: -50px;
+}
+
+.box-inner-img2 {
+    bottom: 10px;   
+    right: -50px;
+}
+
+.box-inner-img1 img,
+.box-inner-img2 img {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.box-img-1 img {
+    width: 380px;
+    border-radius: 300px;
+}
+
+.box-name {
+    text-align: center;
+    font-family: "Sacramento", Arial, serif;
+}
+.box-name h2{
+    font-family: 'Sacramento', Arial, serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+        /* Stack vertically on small screens */
+        align-items: center;
+    }
+}

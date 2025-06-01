@@ -1,23 +1,76 @@
-.tb-calendar{
-    width: 100%;
-    text-align: center;
-    table-layout: fixed;
-}
-
-.tb-calendar td, th{
-    padding: 16px !important;
-}
-
-.day-outof-month{
+.day-outof-month {
     color: lightgray;
 }
 
-.day-of-month{
+.day-of-month {
     color: black;
 }
 
-.day-selected{
+.heart-day {
+    position: absolute;
+    font-size: 60px;
+    color: rgba(255, 0, 0, 0.15);
+    z-index: 0;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.month-name h2 {
     color: #F14E95;
+    margin: 0;
+}
+
+.calendar {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.day-names {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.days div {
+    padding: 10px;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+.days .selected {
+    color: #f14e95;
     font-weight: 900;
-    text-decoration: underline;
+    position: relative;
+}
+
+.calendar-img1 img {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.calendar-img2 img {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.calendar-img3 img {
+    width: 50px;
 }

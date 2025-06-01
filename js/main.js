@@ -217,7 +217,6 @@
 		const audio = document.getElementById('bg-audio');
 
 		muteBtn.addEventListener('click', () => {
-			console.log(audio.paused);
 			audio.muted = !audio.muted;
 
 			if (audio.paused) {
@@ -226,12 +225,96 @@
 			muteBtn.innerHTML = (audio.muted || audio.paused) ? `<i class="fa-duotone fa-solid fa-volume-xmark"></i>` : `<i class="fa-solid fa-volume-high"></i>`;
 		});
 
-		setTimeout(() => {
-			if (audio.paused){
+		// setTimeout(() => {
+			if (audio.paused) {
 				muteBtn.click();
 			}
 			muteBtn.style.display = 'block';
-		}, 3000);
+		// }, 3000);
+	}
+
+	var calendar = function () {
+		var listEl = document.getElementsByClassName("calendar");
+		if (listEl) {
+			var day = 18;
+			var month = 6;
+			var year = 2025;
+
+			var listDayName = ["CN", "T2", "T3", "T4", "T5", "T6", "T7"];
+
+			var fromDate = new Date(year, month, 1);
+			var toDate = new Date(
+				new Date(fromDate).setMonth(fromDate.getMonth() + 1)
+			);
+			toDate = new Date(toDate.setDate(toDate.getDate() - 1));
+
+			let _index = fromDate.getDay();
+			if (_index > 0) {
+				fromDate = new Date(fromDate.setDate(fromDate.getDate() - _index));
+			}
+			_index = toDate.getDay();
+			if (_index < 6) {
+				toDate = new Date(toDate.setDate(toDate.getDate() + (6 - _index)));
+			}
+
+			let html = "";
+			html += `<div class="calendar-img1">
+					<img src="images/bg/shape7.svg">
+				</div>
+				
+				<div class="calendar-img2">
+					<img src="images/bg/shape8.svg">
+				</div>`;
+			html += `<div class='month-name'><h2>Tháng 7/2025</h2>
+			<div class="calendar-img3">
+					<img src="images/bg/shape2.svg">
+				</div>
+			</div>`;
+			html += `<div class="days">`;
+			listDayName.forEach((element) => {
+				html += `<div class="day-names">${element}</div>`;
+			});
+			for (
+				var date = new Date(fromDate);
+				date <= toDate;
+				date = new Date(date.setDate(date.getDate() + 1))
+			) {
+				html += `<div class="${date.getMonth() == month ? "day-of-month" : "day-outof-month"}
+				${date.getDate() == day ? "selected" : ""}">
+				${date.getDate() == day
+						? '<i class="fa-solid fa-heart heart-day"></i>'
+						: ""
+					}
+            ${date.getDate()}
+            </div>`;
+			}
+			html += `</div>`;
+
+			for (var el of listEl) {
+				el.innerHTML = html;
+			}
+		}
+	}
+
+	var envelop = function () {
+
+		var ANIMATION_TIME = 2000;
+		var envelope = $("#box-envelope");
+		var heart = $("#heart-envelop");
+		var card = $('#main-content');
+
+		heart.click(function () {
+			if (!envelope.hasClass('flip')) {
+				envelope.addClass('flip');
+				envelope.fadeOut(ANIMATION_TIME);
+				window.setTimeout(function () {
+					envelope.css('display', 'none');
+					card.css('display', 'block');
+					autoplay();
+				}, ANIMATION_TIME);
+			}
+		});
+
 	}
 
 	$(function () {
@@ -246,7 +329,9 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
-		autoplay();
+		// autoplay();
+		calendar();
+		envelop();
 	});
 
 
