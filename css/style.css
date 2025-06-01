@@ -840,6 +840,10 @@ figure {
     left: 1em;
     right: 1em;
   }
+
+  #fh5co-gallery h2{
+    font-size: 40px;
+  }
 }
 
 #fh5co-gallery-list li a .case-studies-summary span {
