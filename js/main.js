@@ -312,14 +312,14 @@
 				window.setTimeout(function () {
 					mainEnvenlop.css('display', 'none');
 					card.css('display', 'block');
-					autoplay();
+					onload();
 				}, ANIMATION_TIME);
 			}
 		});
 
 	}
 
-	$(function () {
+	var onload = function () {
 		mobileMenuOutsideClick();
 		parallax();
 		offcanvasMenu();
@@ -331,8 +331,12 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
-		// autoplay();
 		calendar();
+		autoplay();
+	}
+
+	$(function () {
+		// onload();
 		envelop();
 	});
 
