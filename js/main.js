@@ -226,10 +226,10 @@
 		});
 
 		// setTimeout(() => {
-			if (audio.paused) {
-				muteBtn.click();
-			}
-			muteBtn.style.display = 'block';
+		if (audio.paused) {
+			muteBtn.click();
+		}
+		muteBtn.style.display = 'block';
 		// }, 3000);
 	}
 
@@ -305,15 +305,19 @@
 		var card = $('#main-content');
 
 		envelope.click(function () {
-		// heart.click(function () {
+			// heart.click(function () {
 			if (!envelope.hasClass('flip')) {
 				envelope.addClass('flip');
-				mainEnvenlop.fadeOut(ANIMATION_TIME);
 				window.setTimeout(function () {
-					mainEnvenlop.css('display', 'none');
-					card.css('display', 'block');
-					onload();
-				}, ANIMATION_TIME);
+					envelope.addClass('fly-away');
+					mainEnvenlop.fadeOut(ANIMATION_TIME);
+					window.setTimeout(function () {
+						mainEnvenlop.css('display', 'none');
+						card.css('display', 'block');
+						onload();
+					}, ANIMATION_TIME);
+				}, 1000);
+
 			}
 		});
 

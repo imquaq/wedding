@@ -1301,7 +1301,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fadeIn {
-  animation: fadeSlideIn 0.5s ease-out 0.5s forwards;
+  animation: fadeSlideIn 1s ease-out 1s forwards;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 
@@ -1340,7 +1340,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fadeInDown {
-  animation: fadeSlideIn 0.5s ease-out 0.5s forwards;
+  animation: fadeSlideIn 2s ease-out 2s forwards;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
@@ -1412,7 +1412,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fadeInLeft {
-  animation: fadeSlideIn 0.5s ease-out 0.5s forwards;
+  animation: fadeSlideIn 1s ease-out 1s forwards;
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
@@ -1484,7 +1484,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fadeInRight {
-  animation: fadeSlideIn 0.5s ease-out 0.5s forwards;
+  animation: fadeSlideIn 1s ease-out 1s forwards;
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
@@ -1560,7 +1560,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fadeInUp {
-  animation: fadeSlideIn 0.5s ease-out 0.5s forwards;
+  animation: fadeSlideIn 2s ease-out 2s forwards;
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
@@ -3478,4 +3478,25 @@ Copyright (c) 2015 Daniel Eden
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+
+#box-envelope.fly-away {
+  animation: flyAway 2s forwards;
+}
+
+@keyframes flyAway {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(-50px, -200px) rotate(-20deg) scale(1.1);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translate(300px, -800px) rotate(45deg) scale(0.5);
+    opacity: 0;
+  }
 }
