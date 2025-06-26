@@ -442,10 +442,14 @@ textarea:focus:-ms-input-placeholder {
     position: absolute;
     z-index: 99999;
     cursor: pointer;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     font-size: 100px;
+    animation: pulse 1s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 
@@ -515,6 +519,9 @@ textarea:focus:-ms-input-placeholder {
     left: 0;
     position: absolute;
     width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* top side */
@@ -548,9 +555,9 @@ textarea:focus:-ms-input-placeholder {
         position: absolute;
         z-index: 99999;
         cursor: pointer;
-        top: 50%;
+        /* top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
         font-size: 50px;
     }
 
@@ -592,5 +599,4 @@ textarea:focus:-ms-input-placeholder {
         border-bottom: 3px solid rgba(0, 0, 0, .08);
         transform: rotate(10deg) translate(-248px, 0);
     }
-
 }
