@@ -12,9 +12,10 @@
     color: rgba(255, 0, 0, 0.15);
     z-index: 0;
     pointer-events: none;
-    top: 50%;
+    animation: pulse 1s ease infinite;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .month-name h2 {
@@ -55,6 +56,10 @@
     color: #f14e95;
     font-weight: 900;
     position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .calendar-img1 img {
